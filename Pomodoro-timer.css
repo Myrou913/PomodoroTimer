@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("pink1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.header__icon {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.header__name-span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.header__name {
+  font-family:  Chela One;
+  font-size: 50px;
+  color: #de0252;
+  margin-right: 20px;
+}
+
+.header__span {
+  font-family: Caveat;
+  font-size: 25px;
+  color: #fc6e96;
+  padding-left: 30px;
+}
+
+.main__box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.focus__button {
+  border: 3px solid transparent;
+  padding: 4px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-right: 15px;
+  font-family: Fredoka;
+  color: #ff487b;
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.focus__button.active:hover {
+  background-color: transparent;
+  border-color: #fff;
+  color: #ff487b;
+}
+
+.break__button {
+  border: 3px solid transparent;
+  padding: 4px 20px;
+  border-radius: 10px;
+  background-color: #ff487b;
+  font-family: Fredoka;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.break__button:hover {
+  background-color: transparent;
+  border-color: #fff;
+  color: #ff487b;
+}
+
+.main__part1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__stars {
+  margin-right: 15px;
+}
+
+.main__box2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.icon {
+  background-color: #ebdcd0;
+  padding: 25px 3px;
+  border-radius: 20px;
+}
+
+.main__timer {
+  font-family: Shrikhand;
+  font-size: 150px;
+  color: transparent;
+  -webkit-text-stroke: 2px #ff487b;
+  text-shadow: 10px 6px 0 #ff89ab;
+  font-weight: bold;
+}
+
+.main__timer.active {
+  font-family: Anton;
+  font-size: 150px;
+  color: #ff487b;
+  text-shadow: 6px 7px 0 #ff89ab;
+  font-weight: 400;
+}
+
+.main__timer.active {
+  font-size: 10.6rem;
+  font-weight: 500;
+  font-family: 'Fredoka One', sans-serif;
+  text-transform: uppercase;
+  
+  background: radial-gradient(circle, #ff89ab 50%, transparent 40%) repeat;
+  background-size: 10px 10px;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  -webkit-text-stroke: 2px #ff608d;;
+  text-shadow: 
+    8px 8px 0  #ff487b,
+    12px 12px 0 #d1004b;
+}
+
+.main__box3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.start__button {
+  border: none;
+  padding: 7px 20px;
+  border-radius: 10px;
+  background-color: #ff487b;
+  font-family: Fredoka;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.start__button:hover {
+  background-color: #de3665;
+}
+
+.stop__button {
+  border: none;
+  padding: 7px 20px;
+  border-radius: 10px;
+  background-color: #ff487b;
+  font-family: Fredoka;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.stop__button:hover {
+  background-color: #de3665;
+}
+
+.reset__button {
+  border: none;
+  padding: 7px 20px;
+  border-radius: 10px;
+  background-color: #ff487b;
+  font-family: Fredoka;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.reset__button:hover {
+  background-color: #de3665;
+}
+
+.main__settings-icon {
+  cursor: pointer;
+}
+
+.main {
+  align-items: center;
+}
+
+
+.icon__header--blue {
+  color: #7496c0;
+}
+.header__name--blue {
+  color: #7496c0;
+}
+.header__span--blue {
+  color: #274579;
+}
+.focus__button--blue {
+  color: #274579;
+}
+.break__button--blue {
+  background-color: #274579;
+}
+.main__timer--blue {
+  -webkit-text-stroke: 2px #274579;
+  text-shadow: 10px 6px 0 #7496c0;
+}
+.main__timer.active--blue {
+  color: #274579;
+  text-shadow: 6px 7px 0 #7496c0;
+}
+.main__timer.active--blue {
+  background: radial-gradient(circle, #aac4e1 50%, transparent 40%) repeat;
+  -webkit-text-stroke: 2px #aac4e1;
+  text-shadow: 
+    8px 8px 0  #7496c0,
+    12px 12px 0 #274579;
+}
+.start__button--blue {
+  background-color: #274579;
+}
+.stop__button--blue {
+  background-color: #274579;
+}
+.reset__button--blue {
+  background-color: #274579;
+}
+.main__settings-icon--blue {
+  color: #274579;
+}
+.focus__button.active--blue:hover {
+  background-color: transparent;
+  border-color: #fff;
+  color: #274579;
+}
+.break__button--blue:hover {
+  background-color: transparent;
+  border-color: #fff;
+  color: #274579;
+}
+
+
+
+.icon__header--green {
+  color: #fff;
+}
+.header__name--green {
+  color: #60b442;
+}
+.header__span--green {
+  color: #24351e;
+}
+.focus__button--green {
+  color: #24351e;
+}
+.break__button--green {
+  background-color: #24351e;
+}
+.main__timer--green {
+  -webkit-text-stroke: 2px #24351e;
+  text-shadow: 10px 6px 0 #60b442;
+}
+.main__timer.active--green {
+  color: #24351e;
+  text-shadow: 6px 7px 0 #60b442;
+}
+.main__timer.active--green {
+  background: radial-gradient(circle, #aec372 50%, transparent 40%) repeat;
+  -webkit-text-stroke: 2px #aec372;
+  text-shadow: 
+    8px 8px 0  #60b442,
+    12px 12px 0 #24351e;
+}
+.start__button--green {
+  background-color: #24351e;
+}
+.stop__button--green {
+  background-color: #24351e;
+}
+.reset__button--green {
+  background-color: #24351e;
+}
+.main__settings-icon--green {
+  color: #24351e;
+}
+.focus__button.active--green:hover {
+  background-color: transparent;
+  border-color: #fff;
+  color: #24351e;
+}
+.break__button--green:hover {
+  background-color: transparent;
+  border-color: #fff;
+  color: #24351e;
+}
+
+
