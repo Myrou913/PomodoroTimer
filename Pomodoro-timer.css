@@ -337,5 +337,33 @@ input {
 }
 
 .title__window1 {
-  font-family: Fredoka;
+  font-family: Nunito;
+  font-weight: 800;
+  font-size: 40px;
+  color: #fff;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.window1__container {
+  background-color: black;
+  margin: 100px;
+  z-index: 1000;
+  border-radius: 20px;
+  padding: 30px 100px;
+  height: 25rem;
+}
+
+.window1__elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.add__newtask {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #c9beb5;
+  border-radius: 12px;
 }
