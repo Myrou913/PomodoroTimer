@@ -328,4 +328,14 @@ body {
   color: #24351e;
 }
 
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
 
+.title__window1 {
+  font-family: Fredoka;
+}
