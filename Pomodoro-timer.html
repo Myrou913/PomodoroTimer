@@ -7,7 +7,11 @@
   rel="stylesheet" 
   href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
 />
-    <link rel="stylesheet" href="Pomodoro-timer.css"> 
+<link rel="stylesheet" href="header.css"> 
+<link rel="stylesheet" href="general.css"> 
+<link rel="stylesheet" href="main.css"> 
+<link rel="stylesheet" href="ToDoList.css"> 
+<link rel="stylesheet" href="settings.css"> 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
@@ -110,17 +114,59 @@
               To-do-list
             </h1>
             <div class="add__newtask">
-              <input type="text" id="input__box" placeholder="Add new task...">
+              <input class="input" type="text" id="input__box" placeholder="Add new task...">
               <button class="button__add">
                 Add
               </button>
             </div>
             <ul class="list__container">
-              <!--<li class="checked">Task 1</li>
+             <!--<li class="checked">Task 1</li>
               <li>Task 2</li>
               <li>Task 3</li>
               <li>Task 4</li>-->
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="settings">
+        <div class="settings__container">
+          <div class="settings__elements">
+            <p>Themes</p>
+            <p>Timer</p>
+          </div>
+          <div class="vertical__line"></div>
+          
+          <div class="settings__elements1 hidden">
+            <div class="hours">
+              <p>Hours:</p>
+              <input type="number" min="0" max="23">
+            </div>
+            <div class="minutes">
+              <p>Minutes:</p>
+              <input type="number" min="0" max="59">
+            </div>
+            <div class="seconds">
+              <p>Seconds:</p>
+              <input type="number" min="0" max="59">
+            </div>
+          </div>
+          <div class="hidden">
+            <div>
+              <img src="images/pink1.jpg" class="color__theme">
+              <img src="images/pink2.jpg" class="color__theme">
+              <img src="images/pink3.jpg" class="color__theme">
+            </div>
+            <div>
+              <img src="images/blue1.jpg" class="color__theme">
+              <img src="images/blue2.jpg" class="color__theme">
+              <img src="images/blue3.jpg" class="color__theme">
+            </div>
+            <div>
+              <img src="images/kawaii1.jpg" class="color__theme">
+              <img src="images/kawaii2.jpg" class="color__theme">
+              <img src="images/kawaii3.jpg" class="color__theme">
+            </div>
           </div>
         </div>
       </section>
