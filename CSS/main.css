@@ -89,15 +89,15 @@
   font-weight: 500;
   font-family: 'Fredoka One', sans-serif;
   text-transform: uppercase;
-  
+
   background: radial-gradient(circle, #ff89ab 50%, transparent 40%) repeat;
   background-size: 10px 10px;
   -webkit-background-clip: text;
   color: transparent;
 
-  -webkit-text-stroke: 2px #ff608d;;
+  -webkit-text-stroke: 2px #ff608d;
   text-shadow: 
-    8px 8px 0  #ff487b,
+    8px 8px 0 #ff487b,
     12px 12px 0 #d1004b;
 }
 
