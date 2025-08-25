@@ -78,7 +78,7 @@ ul li::before {
   height: 28px;
   width: 28px;
   border-radius: 50%;
-  background-image: url(images/radio_button_unchecked_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
+  background-image: url(../images/radio_button_unchecked_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
   background-size: cover;
   background-position: center;
   top: 12px;
@@ -91,7 +91,7 @@ ul li.checked {
 }
 
 ul li.checked::before {
-  background-image: url(images/check_circle_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
+  background-image: url(../images/check_circle_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
 }
 
 .button__add--blue {

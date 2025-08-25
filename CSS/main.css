@@ -67,7 +67,7 @@
   border-radius: 20px;
 }
 
-.main__timer {
+.main__timer.active {
   font-family: Shrikhand;
   font-size: 150px;
   color: transparent;
@@ -84,7 +84,7 @@
   font-weight: 400;
 }
 
-.main__timer.active {
+.main__timer {
   font-size: 10.6rem;
   font-weight: 500;
   font-family: 'Fredoka One', sans-serif;
