@@ -47,79 +47,79 @@
   </head>
   <body>
     <header>
-      <div class="header__container">
-        <div class="header__icon">
-          <i class="fa-solid fa-clipboard-list icon__header" style="color: #ffa3bd;"></i>
+      <div class="header__container" id="header__container">
+        <div class="header__icon" id="header__icon">
+          <i class="fa-solid fa-clipboard-list icon__header" id="icon__header" style="color: #ffa3bd;"></i>
         </div>
-        <div class="header__name-span">
-          <h1 class="header__name">
+        <div class="header__name-span" id="header__name-span">
+          <h1 class="header__name" id="header__name">
             MirLa 
           </h1>
-          <h4 class="header__span">Pomodoro</h4>
+          <h4 class="header__span" id="header__span">Pomodoro</h4>
         </div>
       </div>
     </header>
     
-    <main class="main">
-      <section class="main__container1">
-        <div class="main__box1">
-          <div class="main__part1">
-            <button class="focus__button">
+    <main class="main" id="main">
+      <section class="main__container1" id="main__container1">
+        <div class="main__box1" id="main__box1">
+          <div class="main__part1" id="main__part1">
+            <button class="focus__button" id="focus__button">
               Focus
             </button>
-            <div class="main__stars">
-              <i class="fa-solid fa-star fa-2xs" style="color: #8e8782;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #c9beb5;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #c9beb5;"></i>
-              <i class="fa-solid fa-star fa-2xs" style="color: #c9beb5;"></i>
+            <div class="main__stars" id="main__stars">
+              <i class="fa-solid fa-star fa-2xs" id="star1" style="color: #c9beb5;"></i>
+              <i class="fa-solid fa-star fa-2xs" id="star2" style="color: #c9beb5;"></i>
+              <i class="fa-solid fa-star fa-2xs" id="star3" style="color: #c9beb5;"></i>
+              <i class="fa-solid fa-star fa-2xs" id="star4" style="color: #c9beb5;"></i>
             </div>
           </div>
-          <div class="main__part2">
-            <button class="break__button">
+          <div class="main__part2" id="main__part2">
+            <button class="break__button" id="break__button">
               Break
             </button>
           </div>
         </div>
       </section>
 
-      <section class="main__container2">
-        <div class="main__box2">
-          <i class="fa-solid fa-caret-right icon" style="color: #ffffff; transform: scaleX(-1);"></i>
-          <h1 class="main__timer">
+      <section class="main__container2" id="main__container2">
+        <div class="main__box2" id="main__box2">
+          <i class="fa-solid fa-caret-right icon" id="icon1" style="color: #ffffff; transform: scaleX(-1); cursor:pointer;"></i>
+          <h1 class="main__timer" id="main__timer">
             25:00
           </h1>
-          <i class="fa-solid fa-caret-right icon" style="color: #ffffff;"></i>
+          <i class="fa-solid fa-caret-right icon" id="icon2" style="color: #ffffff; cursor:pointer;"></i>
         </div>
       </section>
 
-      <section class="main__container3">
-        <div class="main__box3">
-          <button class="start__button">
+      <section class="main__container3" id="main__container3">
+        <div class="main__box3" id="main__box3">
+          <button class="start__button" id="start__button">
             Start
           </button>
-          <button class="stop__button">
+          <button class="stop__button" id="stop__button">
             Stop
           </button>
-          <button class="reset__button">
+          <button class="reset__button" id="reset__button">
             Reset
           </button>
-          <i class="fa-solid fa-gear fa-xl main__settings-icon" style="color: #d1004b;"></i> 
+          <i class="fa-solid fa-gear fa-xl main__settings-icon" id="main__settings-icon" style="color: #d1004b;"></i> 
         </div>
       </section>
 
       <section>
-        <div class="window1__container">
-          <div class="window1__elements">
-            <h1 class="title__window1">
+        <div class="window1__container" id="window1__container">
+          <div class="window1__elements" id="window1__elements">
+            <h1 class="title__window1" id="title__window1">
               To-do-list
             </h1>
-            <div class="add__newtask">
+            <div class="add__newtask" id="add__newtask">
               <input class="input" type="text" id="input__box" placeholder="Add new task...">
-              <button class="button__add">
+              <button class="button__add" id="button__add">
                 Add
               </button>
             </div>
-            <ul class="list__container">
+            <ul class="list__container" id="list__container">
              <!--<li class="checked">Task 1</li>
               <li>Task 2</li>
               <li>Task 3</li>
@@ -129,47 +129,49 @@
         </div>
       </section>
 
-      <section class="settings">
-        <div class="settings__container">
-          <div class="settings__elements">
+      <section class="settings" id="settings">
+        <div class="settings__container" id="settings__container">
+          <div class="settings__elements" id="settings__elements">
             <p>Themes</p>
             <p>Timer</p>
           </div>
-          <div class="vertical__line"></div>
+          <div class="vertical__line" id="vertical__line"></div>
           
-          <div class="settings__elements1 hidden">
-            <div class="hours">
+          <div class="settings__elements1 hidden" id="settings__elements1">
+            <div class="hours" id="hours">
               <p>Hours:</p>
-              <input type="number" min="0" max="23">
+              <input type="number" min="0" max="23" id="number1">
             </div>
-            <div class="minutes">
+            <div class="minutes" id="minutes">
               <p>Minutes:</p>
-              <input type="number" min="0" max="59">
+              <input type="number" min="0" max="59" id="number2">
             </div>
-            <div class="seconds">
+            <div class="seconds" id="seconds">
               <p>Seconds:</p>
-              <input type="number" min="0" max="59">
+              <input type="number" min="0" max="59" id="number3">
             </div>
           </div>
-          <div class="hidden">
+          <div class="hidden" id="hidden">
             <div>
-              <img src="images/pink1.jpg" class="color__theme">
-              <img src="images/pink2.jpg" class="color__theme">
-              <img src="images/pink3.jpg" class="color__theme">
+              <img src="images/pink1.jpg" class="color__theme" id="pink__theme1">
+              <img src="images/pink2.jpg" class="color__theme" id="pink__theme2">
+              <img src="images/pink3.jpg" class="color__theme" id="pink__theme3">
             </div>
             <div>
-              <img src="images/blue1.jpg" class="color__theme">
-              <img src="images/blue2.jpg" class="color__theme">
-              <img src="images/blue3.jpg" class="color__theme">
+              <img src="images/blue1.jpg" class="color__theme" id="blue1__theme">
+              <img src="images/blue2.jpg" class="color__theme" id="blue2__theme">
+              <img src="images/blue3.jpg" class="color__theme" id="blue3__theme">
             </div>
             <div>
-              <img src="images/kawaii1.jpg" class="color__theme">
-              <img src="images/kawaii2.jpg" class="color__theme">
-              <img src="images/kawaii3.jpg" class="color__theme">
+              <img src="images/kawaii1.jpg" class="color__theme" id="green1__theme">
+              <img src="images/kawaii2.jpg" class="color__theme" id="green2__theme">
+              <img src="images/kawaii3.jpg" class="color__theme" id="green3__theme">
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <script src="Pomodoro-timer.js"></script>
   </body>
 </html>

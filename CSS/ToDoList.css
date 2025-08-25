@@ -1,4 +1,4 @@
-.input {
+#input__box {
   flex: 1;
   border: none;
   outline: none;
@@ -15,7 +15,7 @@
   margin-left: 170px;
 }
 
-.window1__container {
+#window1__container {
   background-color: black;
   position: fixed;
   top: 50%;
@@ -30,6 +30,7 @@
   width: 80vh;
   display: none;
 }
+
 
 .window1__elements {
   display: flex;
@@ -48,7 +49,7 @@
   margin-bottom: 30px;
 }
 
-.button__add {
+#button__add {
   border: none;
   padding: 7.1px 20px;
   border-radius: 20px;
@@ -94,10 +95,29 @@ ul li.checked::before {
   background-image: url(../images/check_circle_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png);
 }
 
-.button__add--blue {
+#button__add--blue {
   background-color: #274579;
 }
 
-.button__add--blue {
+#button__add--blue {
   background-color: #24351e;
+}
+
+ul li span {
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+ul li span:hover {
+  background-color: #807e7e;
 }
