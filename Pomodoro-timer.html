@@ -103,7 +103,7 @@
           <button class="reset__button" id="reset__button">
             Reset
           </button>
-          <i class="fa-solid fa-gear fa-xl main__settings-icon" id="main__settings-icon" style="color: #d1004b;"></i> 
+          <i class="fa-solid fa-gear fa-xl" id="main__settings-icon" style="color: #d1004b; cursor:pointer;"></i> 
         </div>
       </section>
 
@@ -129,15 +129,15 @@
         </div>
       </section>
 
-      <section class="settings" id="settings">
+      <section id="settings">
         <div class="settings__container" id="settings__container">
           <div class="settings__elements" id="settings__elements">
-            <p>Themes</p>
-            <p>Timer</p>
+            <p id="timer">Timer</p>
+            <p id="themes">Themes</p>
           </div>
           <div class="vertical__line" id="vertical__line"></div>
           
-          <div class="settings__elements1 hidden" id="settings__elements1">
+          <div class="settings__elements1" id="settings__elements1">
             <div class="hours" id="hours">
               <p>Hours:</p>
               <input type="number" min="0" max="23" id="number1">
@@ -151,7 +151,7 @@
               <input type="number" min="0" max="59" id="number3">
             </div>
           </div>
-          <div class="hidden" id="hidden">
+          <div id="settings__elements2">
             <div>
               <img src="images/pink1.jpg" class="color__theme" id="pink__theme1">
               <img src="images/pink2.jpg" class="color__theme" id="pink__theme2">

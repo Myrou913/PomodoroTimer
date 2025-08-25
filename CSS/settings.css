@@ -1,4 +1,4 @@
-.settings__container {
+#settings__container {
   background-color: black;
   position: fixed;
   top: 50%;
@@ -20,7 +20,7 @@
   font-family: Fredoka;
 }
 
-.settings__elements {
+#settings__elements {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +28,7 @@
   cursor: pointer;
 }
 
-.settings__elements1 {
+#settings__elements1 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -67,10 +67,6 @@
   background-color: #fff;
 }
 
-.hidden {
- display: none;
-}
-
 .color__theme {
   width: 110px;
   height: 70px;
@@ -84,6 +80,10 @@
   box-shadow: 0 0 7px #ece6e6;
 }
 
-.settings {
+#settings {
+  display: none;
+}
+
+#settings__elements2 {
   display: none;
 }
