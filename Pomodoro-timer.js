@@ -82,19 +82,6 @@ timer.addEventListener('click', () => {
 const pink1 = document.getElementById('pink__theme1');
 const pink2 = document.getElementById('pink__theme2');
 const pink3 = document.getElementById('pink__theme3');
-
-pink1.addEventListener('click', () => {
-  document.body.style.backgroundImage = "url('../images/pink1.jpg')"
-});
-pink2.addEventListener('click', () => {
-  document.body.style.backgroundImage = "url('../images/pink2.jpg')"
-});
-pink3.addEventListener('click', () => {
-  document.body.style.backgroundImage = "url('../images/pink3.jpg')"
-});
-
-//change blue wallpaper
-
 const blue1 = document.getElementById('blue1__theme');
 const blue2 = document.getElementById('blue2__theme');
 const blue3 = document.getElementById('blue3__theme');
@@ -106,6 +93,69 @@ const mainTimer = document.getElementById('main__timer');
 const startButton = document.getElementById('start__button');
 const stopButton = document.getElementById('stop__button');
 const resetButton = document.getElementById('reset__button');
+
+pink1.addEventListener('click', () => {
+  document.body.style.backgroundImage = "url('../images/pink1.jpg')";
+  toDoListIcon.style.color = "#ffa3bd";
+  namE.style.color = "#de0252";
+  nameSpan.style.color = "#fc6e96";
+  focusButton.style.color = "#ff487b";
+  breakButton.style.backgroundColor = "#ff487b";
+  mainTimer.style.webkitTextStroke = "2px #ff487b";
+  mainTimer.style.textShadow = "10px 6px 0 #ff89ab";
+  startButton.style.backgroundColor = "#ff487b";
+  stopButton.style.backgroundColor = "#ff487b";
+  resetButton.style.backgroundColor = "#ff487b";
+  settingsIcon.style.color = "#ff487b";
+  addButton.style.backgroundColor = '#ff487b';
+  breakButton.onmouseenter = () => {
+    breakButton.style.backgroundColor = 'transparent';
+    breakButton.style.color = '#ff487b';
+  };
+  startButton.onmouseenter = () => {startButton.style.backgroundColor = '#de3665';};
+  stopButton.onmouseenter = () => {stopButton.style.backgroundColor = '#de3665';};
+  resetButton.onmouseenter = () => {resetButton.style.backgroundColor = '#de3665';};
+  breakButton.onmouseleave = () => {
+    breakButton.style.backgroundColor = '#ff487b';
+    breakButton.style.color = '#fff';
+  };
+  startButton.onmouseleave = () => {startButton.style.backgroundColor = '#ff487b';};
+  stopButton.onmouseleave = () => {stopButton.style.backgroundColor = '#ff487b';};
+  resetButton.onmouseleave = () => {resetButton.style.backgroundColor = '#ff487b';};
+});
+pink2.addEventListener('click', () => {
+  document.body.style.backgroundImage = "url('../images/pink2.jpg')";
+  breakButton.onmouseenter = () => {
+    breakButton.style.backgroundColor = 'transparent';
+    breakButton.style.color = '#ff487b';
+  };
+  startButton.onmouseenter = () => {startButton.style.backgroundColor = '#de3665';};
+  stopButton.onmouseenter = () => {stopButton.style.backgroundColor = '#de3665';};
+  resetButton.onmouseenter = () => {resetButton.style.backgroundColor = '#de3665';};
+  breakButton.onmouseleave = () => {
+    breakButton.style.backgroundColor = '#ff487b';
+    breakButton.style.color = '#fff';
+  };
+  startButton.onmouseleave = () => {startButton.style.backgroundColor = '#ff487b';};
+  stopButton.onmouseleave = () => {stopButton.style.backgroundColor = '#ff487b';};
+  resetButton.onmouseleave = () => {resetButton.style.backgroundColor = '#ff487b';};
+});
+pink3.addEventListener('click', () => {
+  document.body.style.backgroundImage = "url('../images/pink3.jpg')";breakButton.onmouseenter = () => {
+    breakButton.style.backgroundColor = 'transparent';
+    breakButton.style.color = '#ff487b';
+  };
+  startButton.onmouseenter = () => {startButton.style.backgroundColor = '#de3665';};
+  stopButton.onmouseenter = () => {stopButton.style.backgroundColor = '#de3665';};
+  resetButton.onmouseenter = () => {resetButton.style.backgroundColor = '#de3665';};
+  breakButton.onmouseleave = () => {
+    breakButton.style.backgroundColor = '#ff487b';
+    breakButton.style.color = '#fff';
+  };
+  startButton.onmouseleave = () => {startButton.style.backgroundColor = '#ff487b';};
+  stopButton.onmouseleave = () => {stopButton.style.backgroundColor = '#ff487b';};
+  resetButton.onmouseleave = () => {resetButton.style.backgroundColor = '#ff487b';};
+});
 
 blue1.addEventListener('click', () => {
   document.body.style.backgroundImage = "url('../images/blue1.jpg')" ;
@@ -121,6 +171,20 @@ blue1.addEventListener('click', () => {
   resetButton.style.backgroundColor = "#274579";
   settingsIcon.style.color = "#274579";
   addButton.style.backgroundColor = '#274579';
+  breakButton.onmouseenter = () => {
+    breakButton.style.backgroundColor = 'transparent';
+    breakButton.style.color = '#274579';
+  };
+  startButton.onmouseenter = () => {startButton.style.backgroundColor = '#1d3660';};
+  stopButton.onmouseenter = () => {stopButton.style.backgroundColor = '#1d3660';};
+  resetButton.onmouseenter = () => {resetButton.style.backgroundColor = '#1d3660';};
+  breakButton.onmouseleave = () => {
+    breakButton.style.backgroundColor = '#274579';
+    breakButton.style.color = '#fff';
+  };
+  startButton.onmouseleave = () => {startButton.style.backgroundColor = '#274579';};
+  stopButton.onmouseleave = () => {stopButton.style.backgroundColor = '#274579';};
+  resetButton.onmouseleave = () => {resetButton.style.backgroundColor = '#274579';};
 });
 blue2.addEventListener('click', () => {
   document.body.style.backgroundImage = "url('../images/blue2.jpg')" ;
@@ -136,6 +200,20 @@ blue2.addEventListener('click', () => {
   resetButton.style.backgroundColor = "#274579";
   settingsIcon.style.color = "#274579";
   addButton.style.backgroundColor = '#274579';
+  breakButton.onmouseenter = () => {
+    breakButton.style.backgroundColor = 'transparent';
+    breakButton.style.color = '#274579';
+  };
+  startButton.onmouseenter = () => {startButton.style.backgroundColor = '#1d3660';};
+  stopButton.onmouseenter = () => {stopButton.style.backgroundColor = '#1d3660';};
+  resetButton.onmouseenter = () => {resetButton.style.backgroundColor = '#1d3660';};
+  breakButton.onmouseleave = () => {
+    breakButton.style.backgroundColor = '#274579';
+    breakButton.style.color = '#fff';
+  };
+  startButton.onmouseleave = () => {startButton.style.backgroundColor = '#274579';};
+  stopButton.onmouseleave = () => {stopButton.style.backgroundColor = '#274579';};
+  resetButton.onmouseleave = () => {resetButton.style.backgroundColor = '#274579';};
 });
 blue3.addEventListener('click', () => {
   document.body.style.backgroundImage = "url('../images/blue3.jpg')" ;
@@ -151,6 +229,20 @@ blue3.addEventListener('click', () => {
   resetButton.style.backgroundColor = "#274579";
   settingsIcon.style.color = "#274579";
   addButton.style.backgroundColor = '#274579';
+  breakButton.onmouseenter = () => {
+    breakButton.style.backgroundColor = 'transparent';
+    breakButton.style.color = '#274579';
+  };
+  startButton.onmouseenter = () => {startButton.style.backgroundColor = '#1d3660';};
+  stopButton.onmouseenter = () => {stopButton.style.backgroundColor = '#1d3660';};
+  resetButton.onmouseenter = () => {resetButton.style.backgroundColor = '#1d3660';};
+  breakButton.onmouseleave = () => {
+    breakButton.style.backgroundColor = '#274579';
+    breakButton.style.color = '#fff';
+  };
+  startButton.onmouseleave = () => {startButton.style.backgroundColor = '#274579';};
+  stopButton.onmouseleave = () => {stopButton.style.backgroundColor = '#274579';};
+  resetButton.onmouseleave = () => {resetButton.style.backgroundColor = '#274579';};
 });
 
 //change green wallpaper
@@ -173,6 +265,20 @@ green1.addEventListener('click', () => {
   resetButton.style.backgroundColor = "#24351e";
   settingsIcon.style.color = "#24351e";
   addButton.style.backgroundColor = '#24351e';
+  breakButton.onmouseenter = () => {
+    breakButton.style.backgroundColor = 'transparent';
+    breakButton.style.color = '#24351e';
+  };
+  startButton.onmouseenter = () => {startButton.style.backgroundColor = '#1b2816ff';};
+  stopButton.onmouseenter = () => {stopButton.style.backgroundColor = '#1b2816ff';};
+  resetButton.onmouseenter = () => {resetButton.style.backgroundColor = '#1b2816ff';};
+  breakButton.onmouseleave = () => {
+    breakButton.style.backgroundColor = '#24351e';
+    breakButton.style.color = '#fff';
+  };
+  startButton.onmouseleave = () => {startButton.style.backgroundColor = '#24351e';};
+  stopButton.onmouseleave = () => {stopButton.style.backgroundColor = '#24351e';};
+  resetButton.onmouseleave = () => {resetButton.style.backgroundColor = '#24351e';};
 });
 green2.addEventListener('click', () => {
   document.body.style.backgroundImage = "url('../images/kawaii2.jpg')" ;
@@ -188,6 +294,20 @@ green2.addEventListener('click', () => {
   resetButton.style.backgroundColor = "#24351e";
   settingsIcon.style.color = "#24351e";
   addButton.style.backgroundColor = '#24351e';
+  breakButton.onmouseenter = () => {
+    breakButton.style.backgroundColor = 'transparent';
+    breakButton.style.color = '#24351e';
+  };
+  startButton.onmouseenter = () => {startButton.style.backgroundColor = '#1b2816ff';};
+  stopButton.onmouseenter = () => {stopButton.style.backgroundColor = '#1b2816ff';};
+  resetButton.onmouseenter = () => {resetButton.style.backgroundColor = '#1b2816ff';};
+  breakButton.onmouseleave = () => {
+    breakButton.style.backgroundColor = '#24351e';
+    breakButton.style.color = '#fff';
+  };
+  startButton.onmouseleave = () => {startButton.style.backgroundColor = '#24351e';};
+  stopButton.onmouseleave = () => {stopButton.style.backgroundColor = '#24351e';};
+  resetButton.onmouseleave = () => {resetButton.style.backgroundColor = '#24351e';};
 });
 green3.addEventListener('click', () => {
   document.body.style.backgroundImage = "url('../images/kawaii3.jpg')" ;
@@ -203,4 +323,18 @@ green3.addEventListener('click', () => {
   resetButton.style.backgroundColor = "#24351e";
   settingsIcon.style.color = "#24351e";
   addButton.style.backgroundColor = '#24351e';
+ breakButton.onmouseenter = () => {
+    breakButton.style.backgroundColor = 'transparent';
+    breakButton.style.color = '#24351e';
+  };
+  startButton.onmouseenter = () => {startButton.style.backgroundColor = '#1b2816ff';};
+  stopButton.onmouseenter = () => {stopButton.style.backgroundColor = '#1b2816ff';};
+  resetButton.onmouseenter = () => {resetButton.style.backgroundColor = '#1b2816ff';};
+  breakButton.onmouseleave = () => {
+    breakButton.style.backgroundColor = '#24351e';
+    breakButton.style.color = '#fff';
+  };
+  startButton.onmouseleave = () => {startButton.style.backgroundColor = '#24351e';};
+  stopButton.onmouseleave = () => {stopButton.style.backgroundColor = '#24351e';};
+  resetButton.onmouseleave = () => {resetButton.style.backgroundColor = '#24351e';};
 });
