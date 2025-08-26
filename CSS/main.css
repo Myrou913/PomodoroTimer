@@ -5,7 +5,7 @@
   padding-top: 80px;
 }
 
-.focus__button {
+#focus__button {
   border: 3px solid transparent;
   padding: 4px 20px;
   border-radius: 10px;
@@ -24,7 +24,7 @@
   color: #ff487b;
 }
 
-.break__button {
+#break__button {
   border: 3px solid transparent;
   padding: 4px 20px;
   border-radius: 10px;
@@ -37,7 +37,7 @@
   transition: all 0.3s;
 }
 
-.break__button:hover {
+#break__button:hover {
   background-color: transparent;
   border-color: #fff;
   color: #ff487b;
@@ -67,7 +67,7 @@
   border-radius: 20px;
 }
 
-.main__timer.active {
+#main__timer {
   font-family: Shrikhand;
   font-size: 150px;
   color: transparent;
@@ -84,7 +84,7 @@
   font-weight: 400;
 }
 
-.main__timer {
+#main__timer.active {
   font-size: 10.6rem;
   font-weight: 500;
   font-family: 'Fredoka One', sans-serif;
@@ -108,7 +108,7 @@
   margin-top: 10px;
 }
 
-.start__button {
+#start__button {
   border: none;
   padding: 7px 20px;
   border-radius: 10px;
@@ -121,11 +121,11 @@
   cursor: pointer;
 }
 
-.start__button:hover {
+#start__button:hover {
   background-color: #de3665;
 }
 
-.stop__button {
+#stop__button {
   border: none;
   padding: 7px 20px;
   border-radius: 10px;
@@ -138,11 +138,11 @@
   cursor: pointer;
 }
 
-.stop__button:hover {
+#stop__button:hover {
   background-color: #de3665;
 }
 
-.reset__button {
+#reset__button {
   border: none;
   padding: 7px 20px;
   border-radius: 10px;
@@ -155,38 +155,19 @@
   cursor: pointer;
 }
 
-.reset__button:hover {
+#reset__button:hover {
   background-color: #de3665;
 }
 
-.main__settings-icon {
+#main__settings-icon {
   cursor: pointer;
+  color: #d1004b;
 }
 
 .main {
   align-items: center;
 }
 
-
-.icon__header--blue {
-  color: #7496c0;
-}
-.header__name--blue {
-  color: #7496c0;
-}
-.header__span--blue {
-  color: #274579;
-}
-.focus__button--blue {
-  color: #274579;
-}
-.break__button--blue {
-  background-color: #274579;
-}
-.main__timer--blue {
-  -webkit-text-stroke: 2px #274579;
-  text-shadow: 10px 6px 0 #7496c0;
-}
 .main__timer.active--blue {
   color: #274579;
   text-shadow: 6px 7px 0 #7496c0;
@@ -198,15 +179,7 @@
     8px 8px 0  #7496c0,
     12px 12px 0 #274579;
 }
-.start__button--blue {
-  background-color: #274579;
-}
-.stop__button--blue {
-  background-color: #274579;
-}
-.reset__button--blue {
-  background-color: #274579;
-}
+
 .main__settings-icon--blue {
   color: #274579;
 }
@@ -223,25 +196,6 @@
 
 
 
-.icon__header--green {
-  color: #fff;
-}
-.header__name--green {
-  color: #60b442;
-}
-.header__span--green {
-  color: #24351e;
-}
-.focus__button--green {
-  color: #24351e;
-}
-.break__button--green {
-  background-color: #24351e;
-}
-.main__timer--green {
-  -webkit-text-stroke: 2px #24351e;
-  text-shadow: 10px 6px 0 #60b442;
-}
 .main__timer.active--green {
   color: #24351e;
   text-shadow: 6px 7px 0 #60b442;
@@ -253,18 +207,7 @@
     8px 8px 0  #60b442,
     12px 12px 0 #24351e;
 }
-.start__button--green {
-  background-color: #24351e;
-}
-.stop__button--green {
-  background-color: #24351e;
-}
-.reset__button--green {
-  background-color: #24351e;
-}
-.main__settings-icon--green {
-  color: #24351e;
-}
+
 .focus__button.active--green:hover {
   background-color: transparent;
   border-color: #fff;
