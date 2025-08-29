@@ -76,7 +76,7 @@
   font-weight: bold;
 }
 
-.main__timer.active {
+#main__timer.active1 {
   font-family: Anton;
   font-size: 150px;
   color: #ff487b;
@@ -84,7 +84,7 @@
   font-weight: 400;
 }
 
-#main__timer.active {
+#main__timer.active2 {
   font-size: 10.6rem;
   font-weight: 500;
   font-family: 'Fredoka One', sans-serif;

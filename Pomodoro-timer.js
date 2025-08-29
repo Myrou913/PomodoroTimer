@@ -363,3 +363,31 @@ green3.addEventListener('click', () => {
   stopButton.onmouseleave = () => {stopButton.style.backgroundColor = '#24351e';};
   resetButton.onmouseleave = () => {resetButton.style.backgroundColor = '#24351e';};
 });
+
+//changing fonts
+
+const icon1 = document.getElementById("icon1");
+const icon2 = document.getElementById("icon2");
+const fonts = ["default","active1","active2"];
+let i = 0;
+
+function setFonts () {
+  mainTimer.classList.remove("active1","active2");
+  if (i > 0) {
+    mainTimer.classList.add(fonts[i]);
+  }
+}
+
+icon1.addEventListener('click', () => {
+  if (i < fonts.length -1) {
+    i++;
+  }
+  setFonts();
+});
+
+icon2.addEventListener('click', () => {
+  if (i > 0) {
+    i--;
+  }
+  setFonts();
+});
