@@ -125,6 +125,18 @@ pink1.addEventListener('click', () => {
 });
 pink2.addEventListener('click', () => {
   document.body.style.backgroundImage = "url('../images/pink2.jpg')";
+  toDoListIcon.style.color = "#ffa3bd";
+  namE.style.color = "#de0252";
+  nameSpan.style.color = "#fc6e96";
+  focusButton.style.color = "#ff487b";
+  breakButton.style.backgroundColor = "#ff487b";
+  mainTimer.style.webkitTextStroke = "2px #ff487b";
+  mainTimer.style.textShadow = "10px 6px 0 #ff89ab";
+  startButton.style.backgroundColor = "#ff487b";
+  stopButton.style.backgroundColor = "#ff487b";
+  resetButton.style.backgroundColor = "#ff487b";
+  settingsIcon.style.color = "#ff487b";
+  addButton.style.backgroundColor = '#ff487b';
   breakButton.onmouseenter = () => {
     breakButton.style.backgroundColor = 'transparent';
     breakButton.style.color = '#ff487b';
@@ -141,7 +153,20 @@ pink2.addEventListener('click', () => {
   resetButton.onmouseleave = () => {resetButton.style.backgroundColor = '#ff487b';};
 });
 pink3.addEventListener('click', () => {
-  document.body.style.backgroundImage = "url('../images/pink3.jpg')";breakButton.onmouseenter = () => {
+  document.body.style.backgroundImage = "url('../images/pink3.jpg')";
+  toDoListIcon.style.color = "#ffa3bd";
+  namE.style.color = "#de0252";
+  nameSpan.style.color = "#fc6e96";
+  focusButton.style.color = "#ff487b";
+  breakButton.style.backgroundColor = "#ff487b";
+  mainTimer.style.webkitTextStroke = "2px #ff487b";
+  mainTimer.style.textShadow = "10px 6px 0 #ff89ab";
+  startButton.style.backgroundColor = "#ff487b";
+  stopButton.style.backgroundColor = "#ff487b";
+  resetButton.style.backgroundColor = "#ff487b";
+  settingsIcon.style.color = "#ff487b";
+  addButton.style.backgroundColor = '#ff487b';
+  breakButton.onmouseenter = () => {
     breakButton.style.backgroundColor = 'transparent';
     breakButton.style.color = '#ff487b';
   };
@@ -312,7 +337,7 @@ green2.addEventListener('click', () => {
 green3.addEventListener('click', () => {
   document.body.style.backgroundImage = "url('../images/kawaii3.jpg')" ;
   toDoListIcon.style.color = "#60b442";
-  namE.style.color = "#60b442";
+  namE.style.color = "#559e3aff";
   nameSpan.style.color = "#24351e";
   focusButton.style.color = "#24351e";
   breakButton.style.backgroundColor = "#24351e";
