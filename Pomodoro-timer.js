@@ -378,14 +378,14 @@ function setFonts () {
   }
 }
 
-icon1.addEventListener('click', () => {
+icon2.addEventListener('click', () => {
   if (i < fonts.length -1) {
     i++;
   }
   setFonts();
 });
 
-icon2.addEventListener('click', () => {
+icon1.addEventListener('click', () => {
   if (i > 0) {
     i--;
   }
