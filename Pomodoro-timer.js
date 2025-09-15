@@ -396,6 +396,7 @@ icon1.addEventListener('click', () => {
 
 let timeLeft = 1500;
 let interval;
+let isBreakMode = false;
 
 const updateTimer = () => {
   const min = Math.floor(timeLeft / 60);
@@ -405,15 +406,17 @@ const updateTimer = () => {
 }
 
 startButton.addEventListener('click', () => {
+  clearInterval(interval);
   interval = setInterval(() =>{
     timeLeft--;
     updateTimer();
 
-    if(timeLeft === 0) {
+    if (timeLeft <= 0) {
       clearInterval(interval);
-      timeLeft = 1500;
-      updateTimer();
       alert("time's up!");
+
+      timeLeft = isBreakMode ? 300 : 1500;
+      updateTimer();
     }
   }, 1000);
 });
@@ -432,19 +435,18 @@ resetButton.addEventListener('click', () => {
   updateTimer();
 });
 
-let isBreakMode = false;
 focusButton.addEventListener('click', () => {
   isBreakMode = false;
-  mainTimer.textContent = "25:00";
+  timeLeft = 1500;
+  updateTimer();
 });
-
-
 
 breakButton.addEventListener('click', () => {
   isBreakMode = true;
-  mainTimer.textContent = "05:00";
+  timeLeft = 300;
+  updateTimer();
 
-  breakButton.onmouseenter = () => {
-    
-  }
+  
 });
+
+updateTimer();
