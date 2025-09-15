@@ -1,5 +1,3 @@
-//#8e8782;
-
 //to-do-list
 
 const toDoList = document.getElementById('window1__container');
@@ -394,28 +392,64 @@ icon1.addEventListener('click', () => {
 
 //timer
 
-let timeLeft = 1500;
+let timeLeft = 1500; 
 let interval;
 let isBreakMode = false;
 
-const updateTimer = () => {
+const hoursInput = document.getElementById("number1");
+const minutesInput = document.getElementById("number2");
+const breakInput = document.getElementById("number3");
+
+function getFocusTime() {
+  const hours = parseInt(hoursInput.value) || 0;
+  const minutes = parseInt(minutesInput.value) || 0;
+  return (hours * 3600) + (minutes * 60);
+}
+
+function getBreakTime() {
+  return (parseInt(breakInput.value) || 5) * 60;
+}
+
+function updateTimer() {
   const min = Math.floor(timeLeft / 60);
   const sec = timeLeft % 60;
-  
-  mainTimer.innerHTML = `${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+  mainTimer.innerHTML =
+    `${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
 }
+
+hoursInput.addEventListener("input", () => {
+  if (!isBreakMode) {
+    timeLeft = getFocusTime();
+    updateTimer();
+  }
+});
+
+minutesInput.addEventListener("input", () => {
+  if (!isBreakMode) {
+    timeLeft = getFocusTime();
+    updateTimer();
+  }
+});
+
+breakInput.addEventListener("input", () => {
+  if (isBreakMode) {
+    timeLeft = getBreakTime();
+    updateTimer();
+  }
+});
 
 startButton.addEventListener('click', () => {
   clearInterval(interval);
-  interval = setInterval(() =>{
+  if (timeLeft <= 0) {
+    timeLeft = isBreakMode ? getBreakTime() : getFocusTime();
+  }
+  interval = setInterval(() => {
     timeLeft--;
     updateTimer();
-
     if (timeLeft <= 0) {
       clearInterval(interval);
       alert("time's up!");
-
-      timeLeft = isBreakMode ? 300 : 1500;
+      timeLeft = isBreakMode ? getBreakTime() : getFocusTime();
       updateTimer();
     }
   }, 1000);
@@ -427,26 +461,23 @@ stopButton.addEventListener('click', () => {
 
 resetButton.addEventListener('click', () => {
   clearInterval(interval);
-  if (isBreakMode) {
-    timeLeft = 300;
-  }else {
-    timeLeft = 1500;
-  }
+  timeLeft = isBreakMode ? getBreakTime() : getFocusTime();
   updateTimer();
 });
 
 focusButton.addEventListener('click', () => {
+  clearInterval(interval);
   isBreakMode = false;
-  timeLeft = 1500;
+  timeLeft = getFocusTime();
   updateTimer();
 });
 
 breakButton.addEventListener('click', () => {
+  clearInterval(interval);
   isBreakMode = true;
-  timeLeft = 300;
+  timeLeft = getBreakTime();
   updateTimer();
-
-  
 });
 
+timeLeft = getFocusTime();
 updateTimer();
