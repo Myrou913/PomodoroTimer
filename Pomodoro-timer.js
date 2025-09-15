@@ -391,3 +391,39 @@ icon1.addEventListener('click', () => {
   }
   setFonts();
 });
+
+//timer
+
+let timeLeft = 1500;
+let interval;
+
+const updateTimer = () => {
+  const min = Math.floor(timeLeft / 60);
+  const sec = timeLeft % 60;
+  
+  mainTimer.innerHTML = `${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+}
+
+startButton.addEventListener('click', () => {
+  interval = setInterval(() =>{
+    timeLeft--;
+    updateTimer();
+
+    if(timeLeft === 0) {
+      clearInterval(interval);
+      timeLeft = 1500;
+      updateTimer();
+      alert("time's up!");
+    }
+  }, 1000);
+});
+
+stopButton.addEventListener('click', () => {
+  clearInterval(interval);
+});
+
+resetButton.addEventListener('click', () => {
+  clearInterval(interval);
+  timeLeft = 1500;
+  updateTimer();
+});
