@@ -424,6 +424,27 @@ stopButton.addEventListener('click', () => {
 
 resetButton.addEventListener('click', () => {
   clearInterval(interval);
-  timeLeft = 1500;
+  if (isBreakMode) {
+    timeLeft = 300;
+  }else {
+    timeLeft = 1500;
+  }
   updateTimer();
+});
+
+let isBreakMode = false;
+focusButton.addEventListener('click', () => {
+  isBreakMode = false;
+  mainTimer.textContent = "25:00";
+});
+
+
+
+breakButton.addEventListener('click', () => {
+  isBreakMode = true;
+  mainTimer.textContent = "05:00";
+
+  breakButton.onmouseenter = () => {
+    
+  }
 });
